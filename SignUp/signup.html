@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body class="body">
+    
+    <main class="container">
+        <figure class="central">
+            <section class="signup">
+                <h1 class="title">Sign Up</h1>
+                <form action="./signup.php" method="post" class="signup-form" id="signup-form">
+                    <input type="text" name="user" id="user" placeholder="Enter your username">
+                    <span class="message">The username must contain only lowercase letters.</span>
+
+                    <input type="text" name="name" id="name" placeholder="What's your name?">
+                    <span class="message">Enter your Name</span>
+
+                    <input type="email" name="email" id="email" placeholder="Enter your Email address">
+                    <span class="message">Enter a valid email address</span>
+
+                    <input type="password" name="password" id="password" placeholder="Create Password">
+                    <span class="message">The password must contain eight characters, a capital letter, 
+                        a small letter and a number.</span>
+
+                    <button type="submit" title="SignUp" name="submitButton" id="submitButton">Sign Up</button>
+                </form>
+                <section class="foot-form">
+                    <a href="../Login/index.html">¿Are you a member? Sign In</a>
+                </section>
+            </section>
+            <section class="lower">
+                <a href="../Login/index.html">Back</a>
+            </section>
+        </figure>
+        <script src="./signupValidate.js"></script>
+    </main>
+</body>
+</html>

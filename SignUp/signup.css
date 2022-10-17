@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
+
+:root {
+    --background-light-blue: #0d335f;
+    --background-dark-blue: #0e284c;
+    --light-color-blue: #5581ae;
+    --white: #ffffff;
+    --light-black: #17202A;
+    --highlighted-color: #f9fafc;
+}
+
+html {
+    font-size: 62.5%; /*10px*/
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: linear-gradient(90deg, var(--background-light-blue), var(--light-color-blue), var(--highlighted-color));
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.signup {
+    width: 30rem;
+    height: 52rem;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 0.5rem var(--light-black);
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+}
+
+.title {
+    color: var(--background-dark-blue);
+    font-size: 3rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input {
+    width: 25rem;
+    height: 4rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+
+    border-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 1rem;
+
+    background: var(--highlighted-color);
+    outline-color: var(--background-dark-blue);
+}
+
+.signup-form input:hover {
+    box-shadow: 2px 2px 0.5rem var(--light-black);
+}
+
+.signup-form .message {
+    visibility: hidden;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--background-dark-blue);
+}
+
+.signup-form button {
+    width: 25rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border-style: none;
+    background: var(--background-light-blue);
+    margin: 1rem 0;
+
+    font-family: inherit;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.signup-form button:hover {
+    box-shadow: 2px 2px 0.5rem var(--light-black);
+    background: var(--light-color-blue);
+    transition: 0.3s ease-out;
+}
+
+.signup-form button:active {
+    transform: translateY(0.5rem);
+}
+
+.foot-form {
+    text-align: center;
+}
+
+.foot-form a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-black);
+    font-size: 1.4rem;
+    margin: 0.2rem 0;
+}
+
+.foot-form a:hover {
+    color: var(--light-color-blue);
+}
+
+.lower {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.lower a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.lower a:hover {
+    color: var(--light-black);
+}

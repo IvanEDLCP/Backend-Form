@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+    
+    <main class="container">
+        <figure class="central">
+            <section class="login">
+                <h1 class="title">Welcome</h1>
+                <form action="./validate.php" method="post" class="login-form" id="login-form">
+                    <input type="text" name="user" id="user" placeholder="User">
+                    <span class="message">Enter your Username</span>
+
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <span class="message">Enter your Password</span>
+
+                    <button type="submit" title="logIn" name="submitButton" id="submitButton">Login</button>
+                </form>
+                <section class="foot-form">
+                    <a href="#">¿Lost your password?</a><br>
+                    <a href="../SignUp/signup.html">¿Not a member? Sign Up</a>
+                </section>
+            </section>
+        </figure>
+        <script src="./main.js"></script>
+    </main>
+</body>
+</html>
